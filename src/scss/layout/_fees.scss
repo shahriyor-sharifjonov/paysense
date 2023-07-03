@@ -1,0 +1,28 @@
+.fees{
+    @include res('padding-top', 70px);
+    &__body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title{
+        color: #131313;
+        text-align: center;
+        @include res('font-size', 42px);
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 700;
+        @include res('line-height', 50px);
+        @include res('margin-bottom', 8px);
+    }
+    &__p{
+        color: #626270;
+        text-align: center;
+        @include res('font-size', 18px);
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 500;
+        @include res('line-height', 27px);
+        @include res('margin-bottom', 20px);
+    }
+}

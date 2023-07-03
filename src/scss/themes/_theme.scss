@@ -44,3 +44,28 @@ ul{
     margin-right: auto;
     margin-left: auto;
 }
+.switch{
+    @include res('margin-bottom', 56px);
+    @include res('padding', 10px);
+    @include res('border-radius', 40px);
+    border: solid #E6E6E6;
+    @include res('border-width', 2px);
+    &__item{
+        @include res('padding-top', 8px);
+        @include res('padding-bottom', 8px);
+        @include res('padding-right', 16px);
+        @include res('padding-left', 16px);
+        @include res('border-radius', 40px);
+        color: #0D3F48;
+        text-align: center;
+        @include res('font-size', 14px);
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 700;
+        @include res('line-height', 21px);
+        &.active{
+            color: #fff;
+            background: #0D3F48;
+        }
+    }
+}
