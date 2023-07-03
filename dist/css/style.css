@@ -681,6 +681,124 @@
   margin-right: 0.5555555556vw;
 }
 
+.info__item {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 76.7361111111vw;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info__item:not(:last-of-type) {
+  margin-bottom: 4.8611111111vw;
+}
+
+.info__item:nth-of-type(1) .info__item-img {
+  background: #0D3F48;
+}
+
+.info__item:nth-of-type(1) .info__item-img img {
+  width: 28.6111111111vw;
+  height: 25.625vw;
+}
+
+.info__item:nth-of-type(2) .info__item-img {
+  background: #6CAFBC;
+}
+
+.info__item:nth-of-type(2) .info__item-img img {
+  width: 20.6944444444vw;
+  height: 31.5277777778vw;
+}
+
+.info__item:nth-of-type(3) .info__item-img {
+  background: #F5F8FE;
+}
+
+.info__item:nth-of-type(3) .info__item-img img {
+  width: 25.4166666667vw;
+  height: 16.875vw;
+}
+
+.info__item-content {
+  width: 33.6805555556vw;
+}
+
+.info__item-img {
+  border-radius: 1.3888888889vw;
+  width: 35.8333333333vw;
+  height: 31.5277777778vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info__item-title {
+  color: #131313;
+  font-size: 1.6666666667vw;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.0833333333vw;
+  margin-bottom: 1.5277777778vw;
+}
+
+.info__item-p {
+  max-width: 24.4444444444vw;
+}
+
+.info__item-p p {
+  color: #626270;
+  font-size: 1.1111111111vw;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.3888888889vw;
+}
+
+.info__item-p p span {
+  font-size: 0.9722222222vw;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4583333333vw;
+}
+
+.info__item-p img {
+  margin-top: 0.5555555556vw;
+}
+
+.info__item-p img:nth-of-type(1) {
+  width: 3.4722222222vw;
+  height: 1.7361111111vw;
+  margin-right: 0.6944444444vw;
+}
+
+.info__item-p img:nth-of-type(2) {
+  width: 4.9305555556vw;
+  height: 1.3194444444vw;
+  margin-right: 0.6944444444vw;
+}
+
+.info__item-p img:nth-of-type(3) {
+  width: 4.4444444444vw;
+  height: 1.7361111111vw;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -19,4 +19,98 @@
             @include res('margin-right', 8px);
         }
     }
+    &__item{
+        margin-left: auto;
+        margin-right: auto;
+        @include res('max-width', 1105px);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:not(:last-of-type){
+            @include res('margin-bottom', 70px);
+        }
+        &:nth-of-type(1){
+            .info__item-img{
+                background: #0D3F48;
+                img{
+                    @include res('width', 412px);
+                    @include res('height', 369px);
+                }
+            }
+        }
+        &:nth-of-type(2){
+            .info__item-img{
+                background: #6CAFBC;
+                img{
+                    @include res('width', 298px);
+                    @include res('height', 454px);
+                }
+            }
+        }
+        &:nth-of-type(3){
+            .info__item-img{
+                background: #F5F8FE;
+                img{
+                    @include res('width', 366px);
+                    @include res('height', 243px);
+                }
+            }
+        }
+        &-content{
+            @include res('width', 485px);
+        }
+        &-img{
+            @include res('border-radius', 20px);
+            @include res('width', 516px);
+            @include res('height', 454px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &-title{
+            color: #131313;
+            @include res('font-size', 24px);
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-weight: 700;
+            @include res('line-height', 30px);
+            @include res('margin-bottom', 22px);
+        }
+        &-p{
+            @include res('max-width', 352px);
+            p{
+                color: #626270;
+                @include res('font-size', 16px);
+                font-family: SF Pro Display;
+                font-style: normal;
+                font-weight: 500;
+                @include res('line-height', 20px);
+                span{
+                    @include res('font-size', 14px);
+                    font-family: Manrope;
+                    font-style: normal;
+                    font-weight: 500;
+                    @include res('line-height', 21px);
+                }
+            }
+            img{
+                @include res('margin-top', 8px);
+                &:nth-of-type(1){
+                    @include res('width', 50px);
+                    @include res('height', 25px);
+                    @include res('margin-right', 10px);
+                }
+                &:nth-of-type(2){
+                    @include res('width', 71px);
+                    @include res('height', 19px);
+                    @include res('margin-right', 10px);
+                }
+                &:nth-of-type(3){
+                    @include res('width', 64px);
+                    @include res('height', 25px);
+                }
+            }
+        }
+    }
 }
