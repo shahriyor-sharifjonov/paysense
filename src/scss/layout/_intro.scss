@@ -1,0 +1,103 @@
+.intro{
+    @include res('height', 636px);
+    width: 100%;
+    position: relative;
+    isolation: isolate;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: #00000050;
+    }
+    &__bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__body{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        @include res('padding-top', 142px);
+    }
+    &__title{
+        color: #FFF;
+        text-align: center;
+        @include res('font-size', 56px);
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 700;
+        @include res('line-height', 64px);
+        width: 100%;
+        @include res('max-width', 559px);
+        @include res('margin-bottom', 24px);
+    }
+    &__p{
+        color: #FFF;
+        text-align: center;
+        @include res('font-size', 17px);
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 500;
+        @include res('line-height', 22px);
+        width: 100%;
+        @include res('max-width', 488px);
+        @include res('margin-bottom', 24px);
+    }
+    &__btn{
+        @include res('border-radius', 70px);
+        @include res('padding-top', 12px);
+        @include res('padding-bottom', 12px);
+        @include res('padding-left', 30px);
+        @include res('padding-right', 30px);
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: #131313;
+        @include res('font-size', 15px);
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 500;
+        @include res('line-height', 20px);
+        text-transform: uppercase;
+        background: #FFDD2D;
+        @include res('margin-bottom', 54px);
+    }
+    &__scroll{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        span{
+            color: #FFF;
+            text-align: center;
+            @include res('font-size', 17px);
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-weight: 500;
+            @include res('line-height', 22px);
+            text-transform: uppercase;
+            @include res('margin-bottom', 24px);
+        }
+        svg{
+            @include res('width', 50px);
+            @include res('height', 77px);
+        }
+    }
+}

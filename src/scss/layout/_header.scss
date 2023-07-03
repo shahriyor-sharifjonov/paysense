@@ -1,0 +1,147 @@
+.header{
+    @include res('height', 84px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    &__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo{
+        @include res('width', 195px);
+        @include res('height', 44px);
+        position: relative;
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include res('gap', 52px);
+        @include res('padding-left', 28px);
+    }
+    &__link{
+        color: #757575;
+        text-align: center;
+        @include res('font-size', 16px);
+        font-family: SF Pro Display;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        position: relative;
+        display: block;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            @include res('left', -28px);
+            border-radius: 50%;
+            background: #757575;
+            @include res('width', 4px);
+            @include res('height', 4px);
+        }
+        &.active{
+            color: #FFDD2D;
+            &::before{
+                background: #FFDD2D;
+            }
+        }
+    }
+    &__right{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @include res('gap', 16px);
+    }
+    &__button{
+        @include res('border-radius', 70px);
+        @include res('padding-top', 12px);
+        @include res('padding-bottom', 12px);
+        @include res('padding-left', 30px);
+        @include res('padding-right', 30px);
+        background: #FFDD2D;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000;
+        text-align: center;
+        @include res('font-size', 15px);
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 500;
+        @include res('line-height', 20px);
+        text-transform: uppercase;
+    }
+    &__lang{
+        position: relative;
+        &-btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include res('width', 43px);
+            @include res('height', 43px);
+            border-radius: 50%;
+            color: #000;
+            text-align: center;
+            @include res('font-size', 15px);
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-weight: 500;
+            @include res('line-height', 20px);
+            text-transform: uppercase;
+            background: #FFDD2D;
+            transition: border-radius 300ms ease;
+            transition-delay: 250ms;
+            &.active{
+                transition: border-radius 0ms ease;
+                transition-delay: 0ms;
+                border-radius: 50% 50% 0 0;
+            }
+        }
+        &-content{
+            position: absolute;
+            height: 0;
+            overflow: hidden;
+            background: #FFDD2D;
+            transition: 300ms ease-out;
+            @include res('top', 42px);
+            border-radius: 0 0 2.2916666667vw 2.2916666667vw;
+            // &.active{
+            //     height: max-content;
+            // }
+        }
+        &-track{
+            height: max-content;
+            display: flex;
+            flex-direction: column;
+            @include res('width', 43px);
+            @include res('padding-bottom', 12px);
+        }
+        &-item{
+            color: #000;
+            text-align: center;
+            @include res('font-size', 15px);
+            font-family: SF Pro Display;
+            font-style: normal;
+            font-weight: 500;
+            @include res('line-height', 20px);
+            text-transform: uppercase;
+            transition: background 300ms ease-out;
+            &:not(:last-of-type){
+                @include res('margin-bottom', 10px);
+            }
+        }
+    }
+    &__btn{
+        display: none;
+    }
+}

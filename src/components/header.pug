@@ -1,0 +1,25 @@
+mixin header()
+    header.header
+        .header__nav.container
+            a(href="#!").header__logo
+                img(src="@img/logo.svg", alt="" draggable="false")
+            ul.header__list
+                li.header__li
+                    a(href="index.html").header__link.active For business 
+                li.header__li
+                    a(href="shopper.html").header__link For shoppers
+                li.header__li
+                    a(href="#info").header__link About us
+                li.header__li
+                    a(href="#footer").header__link Contact us
+            .header__right
+                button(type='button' data-target="getStarted").open-popup.header__button Get started
+                .header__lang
+                    button(type='button').header__lang-btn EN
+                    .header__lang-content
+                        .header__lang-track 
+                            a(href="#!").header__lang-item RU
+                            a(href="#!").header__lang-item UZ
+            button(type="button").header__btn
+                span.header__btn-line
+                span.header__btn-line

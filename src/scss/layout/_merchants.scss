@@ -1,0 +1,27 @@
+.merchants{
+    @include res('padding-top', 50px);
+    @include res('padding-bottom', 50px);
+    &__title{
+        color: #131313;
+        text-align: center;
+        @include res('font-size', 24px);
+        font-family: SF Pro Display;
+        font-style: normal;
+        font-weight: 700;
+        @include res('line-height', 28px);
+        @include res('margin-bottom', 28px);
+    }
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include res('gap', 75px);
+    }
+    &__item{
+        @include res('height', 30px);
+        position: relative;
+        img{
+            height: 100%;
+        }
+    }
+}
