@@ -43,7 +43,7 @@ $sizes: (1320:$xxl,
 }
 
 $baseValueLarge: 1440px;
-$baseValueSmall: 360px;
+$baseValueSmall: 390px;
 
 @mixin res($property, $value) {
     #{$property}: calc(($value / $baseValueLarge) * 100vw);
