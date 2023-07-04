@@ -50,6 +50,9 @@ ul{
     @include res('border-radius', 40px);
     border: solid #E6E6E6;
     @include res('border-width', 2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &__item{
         @include res('padding-top', 8px);
         @include res('padding-bottom', 8px);
