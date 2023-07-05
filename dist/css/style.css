@@ -1224,7 +1224,40 @@ ul {
     height: 6.4102564103vw;
   }
 
+  .fees {
+    padding-top: 15.3846153846vw;
+  }
+
+  .fees__title {
+    font-size: 7.1794871795vw;
+    line-height: 8.7179487179vw;
+    margin-bottom: 2.0512820513vw;
+  }
+
+  .fees__p {
+    font-size: 4.6153846154vw;
+    line-height: 6.9230769231vw;
+    margin-bottom: 4.1025641026vw;
+  }
+
   .container {
     max-width: 93.5897435897vw;
+  }
+
+  .switch {
+    margin-bottom: 14.358974359vw;
+    padding: 2.5641025641vw;
+    border-radius: 10.2564102564vw;
+    border-width: 0.5128205128vw;
+  }
+
+  .switch__item {
+    padding-top: 2.0512820513vw;
+    padding-bottom: 2.0512820513vw;
+    padding-right: 4.1025641026vw;
+    padding-left: 4.1025641026vw;
+    font-size: 3.5897435897vw;
+    line-height: 5.3846153846vw;
+    border-radius: 10.2564102564vw;
   }
 }

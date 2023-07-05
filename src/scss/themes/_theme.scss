@@ -56,6 +56,12 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
+    @include media(576){
+        @include resa('margin-bottom', 56px);
+        @include resa('padding', 10px);
+        @include resa('border-radius', 40px);
+        @include resa('border-width', 2px);
+    }
     &__item{
         @include res('padding-top', 8px);
         @include res('padding-bottom', 8px);
@@ -69,6 +75,15 @@ ul{
         font-style: normal;
         font-weight: 700;
         @include res('line-height', 21px);
+        @include media(576){
+            @include resa('padding-top', 8px);
+            @include resa('padding-bottom', 8px);
+            @include resa('padding-right', 16px);
+            @include resa('padding-left', 16px);
+            @include resa('font-size', 14px);
+            @include resa('line-height', 21px);
+            @include resa('border-radius', 40px);
+        }
         &.active{
             color: #fff;
             background: #0D3F48;

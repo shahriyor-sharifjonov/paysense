@@ -1,5 +1,8 @@
 .fees{
     @include res('padding-top', 70px);
+    @include media(576){
+        @include resa('padding-top', 60px);
+    }
     &__body{
         display: flex;
         flex-direction: column;
@@ -14,6 +17,11 @@
         font-weight: 700;
         @include res('line-height', 50px);
         @include res('margin-bottom', 8px);
+        @include media(576){
+            @include resa('font-size', 28px);
+            @include resa('line-height', 34px);
+            @include resa('margin-bottom', 8px);
+        }
     }
     &__p{
         color: #626270;
@@ -24,5 +32,10 @@
         font-weight: 500;
         @include res('line-height', 27px);
         @include res('margin-bottom', 20px);
+        @include media(576){
+            @include resa('font-size', 18px);
+            @include resa('line-height', 27px);
+            @include resa('margin-bottom', 16px);
+        }
     }
 }
