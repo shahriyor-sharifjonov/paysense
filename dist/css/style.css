@@ -1057,6 +1057,31 @@ ul {
     display: none;
   }
 
+  .merchants {
+    padding-top: 14.358974359vw;
+    padding-bottom: 0vw;
+  }
+
+  .merchants__title {
+    font-size: 5.3846153846vw;
+    line-height: 6.4102564103vw;
+    margin-bottom: 2.0512820513vw;
+  }
+
+  .merchants__content {
+    padding-top: 4.1025641026vw;
+    padding-bottom: 4.1025641026vw;
+    gap: 8.2051282051vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .merchants__item {
+    height: 7.6923076923vw;
+  }
+
   .container {
     max-width: 93.5897435897vw;
   }

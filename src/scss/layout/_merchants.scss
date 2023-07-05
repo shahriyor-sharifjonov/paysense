@@ -1,6 +1,10 @@
 .merchants{
     @include res('padding-top', 50px);
     @include res('padding-bottom', 50px);
+    @include media(576){
+        @include resa('padding-top', 56px);
+        @include resa('padding-bottom', 0px);
+    }
     &__title{
         color: #131313;
         text-align: center;
@@ -10,12 +14,23 @@
         font-weight: 700;
         @include res('line-height', 28px);
         @include res('margin-bottom', 28px);
+        @include media(576){
+            @include resa('font-size', 21px);
+            @include resa('line-height', 25px);
+            @include resa('margin-bottom', 8px);
+        }
     }
     &__content{
         display: flex;
         align-items: center;
         justify-content: center;
         @include res('gap', 75px);
+        @include media(576){
+            @include resa('padding-top', 16px);
+            @include resa('padding-bottom', 16px);
+            @include resa('gap', 32px);
+            flex-direction: column;
+        }
     }
     &__item{
         @include res('height', 30px);
@@ -23,6 +38,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @include media(576){
+            @include resa('height', 30px);
+        }
         img{
             height: 100%;
         }
